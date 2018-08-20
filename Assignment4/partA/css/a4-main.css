@@ -1,0 +1,74 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: ___Xin Song Zhang_____ Student ID: ___111796171____ Date: _July 14th, 2018___ 
+* 
+********************************************************************************/
+
+
+body{
+    background-color: rgb(238, 177, 63);
+    color:royalblue;
+}
+
+header{
+    background-color: rgb(222, 158, 151);
+    margin-bottom: 2px;
+    padding: 10px
+}
+
+nav{
+    background-color: rgb(220, 19, 19);
+}
+
+footer{
+    background-color: yellowgreen;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.app-title {
+    color: rebeccapurple;
+    font-family: 'Gaegu', cursive;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line:overline;
+    text-decoration-style: wavy;
+    text-shadow: 2px 2px #000000;
+}
+
+.main-table-container{
+    height:510px;
+    width:800px;
+    overflow: scroll;
+    border: 2px dashed #000000;
+    margin: 10px;
+}
+
+.main-table-top th{
+    text-align:left;
+    font-size: 18px;
+    font-family:'Raleway', sans-serif;
+    padding: 10px;
+}
+
+.main-table td{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-line: underline;
+}

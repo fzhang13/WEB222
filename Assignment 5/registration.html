@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize1.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Raleway|Ubuntu|Dosis');
+    </style>
+    <script src="registration.js"></script>
+</head>
+<body id="registration">
+    <div>
+        <header>
+            <div class="img">
+            <img src="logo.png" alt="Shopping Registration">
+            </div>
+            <div class="title"><h1>Registration</h1></div>
+        </header>
+        <div id="navigation">
+        <nav>
+            <h2>Related Sites</h2>
+            <a href="index.html">Home</a> <br>
+            <a href="registration.html">Registration</a> <br>
+            <a href="http://senecacollege.ca">Seneca College</a><br>
+            <a href="https://ict.senecacollege.ca/">School of ICT</a><br>
+            <a href="https://www.google.ca/">Google</a> <br>
+            <img src="nav.png" alt="navigation">
+        </nav>
+        </div>
+
+    <div id ="form">
+    <form action="https://httpbin.org/post" method="post" name="signup" onsubmit="return checkData();">
+    <fieldset>
+    <legend>Shipping Address</legend>
+        First Name <br> <input type="text" name="first-name" autofocus required/> <br/>
+        Last Name <br> <input type="text" name="last-name" required/> <br>
+        Unit Number <br><input type="text" name="unit" required/> <br>
+        Street Number <br> <input type="text" name="street" required/> <br>
+        Street Name <br><input type="text" name="streetname" required/> <br>   
+        City <br> <input type="text" name="city" required/> <br>
+        Province <br><select name="province" id="province" >
+            <option value="British Columbia">British Columbia</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Manitoba">Manitoba</option>
+            <option selected="selected" value="Ontario">Ontario</option>
+            <option value="Quebec">Quebec</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="PEI">Price Edward Island</option>
+            <option value="NFLab">Newfoundland and Labrador</option>
+            <option value="Yukon">Yukon</option>
+            <option value="Northwest">Northwest Territories</option>
+            <option value="Nunavut">Nunavut</option>
+        </select><br>
+        Postal Code <br> <input type="text" name="postal" pattern="^(?!.*[dfioquDFIOQU])[a-vxyA-VXY][0-9][a-zA-Z][0-9][a-zA-Z][0-9]$"
+        required title="format allowed(Letter Digit Letter Digit Letter Digit)"> <br>
+        Phone Number <br> <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required title="XXX-XXX-XXXX" name="phone"><br>
+    </fieldset>
+    <div id="account">
+    <fieldset>
+        <legend>Account signup</legend>
+        Username <br><input type="text" name="username" required><br>
+        Password <br> <input type="password" name="password" required><br>
+        Retype password <br><input type="password" name="retype" required><br> 
+        Email <br> <input type="email" name="email" required><br>
+    </fieldset>
+</div>
+       
+   
+    <input type="hidden" name="lastName" id="lastName" value="Zhang" />
+    <input type="hidden" name="studentId" id="studentId" value="111976171" />
+    <div id="button">
+    <input class="button" type="submit" value="Submit">
+    <input class="button" type="reset" value="Reset">
+    </div>
+    </form>
+</div>
+<div id="errorcheck"></div>
+</div>
+    
+    <footer>&copy;Xin Song Felix Zhang 2018</footer>
+</body>
+</html>
