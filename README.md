@@ -1,7 +1,7 @@
-# WEB222
+# WEB222 Assignments and Projects
 
+## Description
+* Contains all the relevant classwork assignments and projects done in HTML5, CSS3, JS
+* For reference only. Please feel free to use it as a sample, but do not copy the code. Thank you!
 
-Contains all relevant assignments written in WEB
-
-Written in JS, HTML5 and CSS3
-By Felix Xin Song Zhang
+* **Written by Felix Xin Song Zhang** 
